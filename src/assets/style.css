@@ -1,0 +1,24 @@
+.divider {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.cart-items-container {
+  height: 676px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.product_image {
+  position: relative;
+  width: 100%;
+}
+
+select {
+  color: orangered;
+  font-weight: bold;
+  font-size: 1as rem;
+}
+
+.quantity_changer {
+  width: 100%;
+}
