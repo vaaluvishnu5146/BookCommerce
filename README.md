@@ -1,8 +1,14 @@
-# React + Vite
+# BookCommerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Application uses:
 
-Currently, two official plugins are available:
+1. React
+2. Reactstrap
+3. Redux-Toolkit
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![screencapture-localhost-5173-2024-04-23-20_29_42](https://github.com/vaaluvishnu5146/BookCommerce/assets/22257731/2778501e-3414-4991-8005-3ace6753f5c8)
+
+Steps to start application:
+
+1. npm install
+2. npm run dev
