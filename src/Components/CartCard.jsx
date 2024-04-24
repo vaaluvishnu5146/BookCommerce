@@ -12,11 +12,7 @@ export default function CartCard({
       <div className="col-6">
         <div className="row">
           <div className="col-3">
-            <img
-              className="product_image"
-              src="https://m.media-amazon.com/images/I/71UWrA66paL._AC_UF1000,1000_QL80_.jpg"
-              alt="book"
-            />
+            <img className="product_image" src={data.thumbnail} alt="book" />
           </div>
           <div className="col-9">
             <h4 className="mb-4">{data.title}</h4>
@@ -24,13 +20,7 @@ export default function CartCard({
               options={[
                 {
                   title: "Details & Care",
-                  description:
-                    "We procider great looking book cover that pulls readers to buy this book.",
-                },
-                {
-                  title: "Sustainability",
-                  description:
-                    "We procider great looking book cover that pulls readers to buy this book.",
+                  description: data.description,
                 },
               ]}
             />

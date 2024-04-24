@@ -8,8 +8,8 @@ const CartSlice = createSlice({
     total: 0,
   },
   reducers: {
-    saveAllProducts: (state, action) => {
-      return { ...state, items: action.payload };
+    addItemToCart: (state, action) => {
+      state.items.push(action.payload);
     },
     quantityChange: (state, action) => {
       return {
@@ -38,18 +38,9 @@ const CartSlice = createSlice({
         total: action.payload,
       };
     },
-    // quantityChange: (state, action) => {
-    //   console.log(state.items);
-    //   const itemsCopy = [...state.items];
-    //   const matchingItem = itemsCopy.find(
-    //     (data) => data.id == action.payload.id
-    //   );
-    //   matchingItem.quantity = action.payload.value;
-    //   return { ...state, items: itemsCopy };
-    // },
   },
 });
 
-export const { saveAllProducts, quantityChange, updateSubTotal, updateTotal } =
+export const { addItemToCart, quantityChange, updateSubTotal, updateTotal } =
   CartSlice.actions;
 export default CartSlice.reducer;
